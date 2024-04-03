@@ -1313,8 +1313,6 @@ function selling_gui.add_card(player : player) -- :)
 
 	--> Remove Card
 	local remove_card = remove.MouseButton1Down:Connect(function()
-		if not connected then return end
-
 		amount_checking:Disconnect()
 		textbox_checking:Disconnect()
 

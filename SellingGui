@@ -1,4 +1,4 @@
-warn("Clones Selling Gui Has Loaded (v.1.0.50)")
+warn('Clones Selling Gui Has Loaded (v2.0.0)')
 
 --[[
 
@@ -1284,7 +1284,7 @@ function selling_gui.add_card(player : player) -- :)
 			if shortcutted then
 				goal_amount = tonumber(shortcutted)
 				cash_to_pickup.Text = "$"..format(tostring(goal_amount))
-				goal.Text = "$"..format(goal_amount)
+				goal.Text = '$'..format(tostring(tonumber(goal_amount + tonumber(player_currency.Value))))
 
 				begin_count = true
 			else
